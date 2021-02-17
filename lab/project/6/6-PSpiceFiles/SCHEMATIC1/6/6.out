@@ -1,0 +1,93 @@
+
+**** 02/08/21 20:36:47 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-6"  [ E:\Courses\AUT\semester 3\Electrical Circuit\lab\project\Orcad\6\6-PSpiceFiles\SCHEMATIC1\6.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "6.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\BARDIA\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 1 1.6 1.6
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source 6
+X_F2    N09053 N09075 0 N09061 SCHEMATIC1_F2 
+L_L1         0 N09061  1H  
+C_C1         0 N09061  0.05  
+E_E1         N09075 0 N09061 0 0.333
+R_R3         0 N09053  4  
+I_I2         N09061 0 DC 0Adc AC 1Aac 
+
+.subckt SCHEMATIC1_F2 1 2 3 4  
+F_F2         3 4 VF_F2 4
+VF_F2         1 2 0V
+.ends SCHEMATIC1_F2
+
+**** RESUMING 6.cir ****
+.END
+
+**** 02/08/21 20:36:47 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-6"  [ E:\Courses\AUT\semester 3\Electrical Circuit\lab\project\Orcad\6\6-PSpiceFiles\SCHEMATIC1\6.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N09053)    0.0000 (N09061)    0.0000 (N09075)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    X_F2.VF_F2   0.000E+00
+
+    TOTAL POWER DISSIPATION   0.00E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 02/08/21 20:36:47 ****** PSpice 17.2.0 (March 2016) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-6"  [ E:\Courses\AUT\semester 3\Electrical Circuit\lab\project\Orcad\6\6-PSpiceFiles\SCHEMATIC1\6.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =        0.00
+

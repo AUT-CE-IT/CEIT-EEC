@@ -1,0 +1,12 @@
+* source 5
+C_C1         0 N09592  0.05  
+X_F2    N09584 N09606 0 N09592 SCHEMATIC1_F2 
+V_V1         N09576 0 DC 0Vdc AC 6Vac 
+L_L1         0 N09592  1H  
+R_R3         N09576 N09584  4  
+E_E1         N09606 0 N09592 0 0.333
+
+.subckt SCHEMATIC1_F2 1 2 3 4  
+F_F2         3 4 VF_F2 4
+VF_F2         1 2 0V
+.ends SCHEMATIC1_F2

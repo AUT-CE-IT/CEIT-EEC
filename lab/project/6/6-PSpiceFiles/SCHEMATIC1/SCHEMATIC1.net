@@ -1,0 +1,12 @@
+* source 6
+X_F2    N09053 N09075 0 N09061 SCHEMATIC1_F2 
+L_L1         0 N09061  1H  
+C_C1         0 N09061  0.05  
+E_E1         N09075 0 N09061 0 0.333
+R_R3         0 N09053  4  
+I_I2         N09061 0 DC 0Adc AC 1Aac 
+
+.subckt SCHEMATIC1_F2 1 2 3 4  
+F_F2         3 4 VF_F2 4
+VF_F2         1 2 0V
+.ends SCHEMATIC1_F2

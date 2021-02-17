@@ -1,0 +1,50 @@
+* source 4
+C_C1         0 N08617  {c}  
+R_R3         N08601 N08609  4  
+X_F2    N08609 N08631 0 N08617 SCHEMATIC1_F2 
+E_E1         N08631 0 N08617 0 0.333
+L_L1         0 N08617  0.5  
+V_V4         N08601 0  
++SIN 0 6 1.6 0 0 0
+L_L2         0 N09457  1.7  
+X_F3    N09449 N09477 0 N09457 SCHEMATIC1_F3 
+R_R4         N09441 N09449  4  
+E_E2         N09477 0 N09457 0 0.333
+C_C2         0 N09457  {c}  
+V_V5         N09441 0  
++SIN 0 6 1.6 0 0 0
+X_F4    N10035 N10063 0 N10043 SCHEMATIC1_F4 
+V_V6         N10027 0  
++SIN 0 6 1.6 0 0 0
+R_R5         N10027 N10035  4  
+E_E3         N10063 0 N10043 0 0.333
+L_L3         0 N10043  2.8  
+C_C3         0 N10043  {c}  
+V_V7         N10630 0  
++SIN 0 6 1.6 0 0 0
+C_C4         0 N10646  {c}  
+E_E4         N10666 0 N10646 0 0.333
+L_L4         0 N10646  4  
+X_F5    N10638 N10666 0 N10646 SCHEMATIC1_F5 
+R_R6         N10630 N10638  4  
+.PARAM  c=1n
+
+.subckt SCHEMATIC1_F2 1 2 3 4  
+F_F2         3 4 VF_F2 4
+VF_F2         1 2 0V
+.ends SCHEMATIC1_F2
+
+.subckt SCHEMATIC1_F3 1 2 3 4  
+F_F3         3 4 VF_F3 4
+VF_F3         1 2 0V
+.ends SCHEMATIC1_F3
+
+.subckt SCHEMATIC1_F4 1 2 3 4  
+F_F4         3 4 VF_F4 4
+VF_F4         1 2 0V
+.ends SCHEMATIC1_F4
+
+.subckt SCHEMATIC1_F5 1 2 3 4  
+F_F5         3 4 VF_F5 4
+VF_F5         1 2 0V
+.ends SCHEMATIC1_F5

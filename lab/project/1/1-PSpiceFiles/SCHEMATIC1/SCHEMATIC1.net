@@ -1,0 +1,13 @@
+* source 1
+X_F2    N07313 N07321 0 N07335 SCHEMATIC1_F2 
+L_L1         0 N07335  1H  
+E_E1         N07321 0 N07335 0 0.333
+C_C1         0 N07335  0.05  
+V_V1         N07305 0  
++SIN 0 6 1.6 0 0 0
+R_R3         N07305 N07313  4  
+
+.subckt SCHEMATIC1_F2 1 2 3 4  
+F_F2         3 4 VF_F2 4
+VF_F2         1 2 0V
+.ends SCHEMATIC1_F2
